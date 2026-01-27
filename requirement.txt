@@ -1,0 +1,20 @@
+# --- Frontend & Dashboard ---
+streamlit==1.47.0
+plotly==6.5.2
+
+# --- Backend & API ---
+fastapi==0.115.13
+uvicorn==0.34.3
+pydantic==2.11.7
+requests==2.32.3
+
+# --- Database & Data Handling ---
+mysql-connector-python==9.3.0
+pandas==2.3.3
+
+# --- Reports & Utils ---
+reportlab==4.4.9
+python-dotenv==1.1.1
+
+# --- Testing (Optional) ---
+pytest==8.4.1

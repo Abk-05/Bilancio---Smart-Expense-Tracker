@@ -1,0 +1,872 @@
+2026-01-26 10:09:04,690 - fastapi_app - INFO - GET /expenses called
+2026-01-26 10:09:04,690 - db_helper - INFO - show_all_expenses called
+2026-01-26 10:09:04,691 - db_helper - DEBUG - Opening database connection
+2026-01-26 10:09:05,080 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 10:09:05,082 - fastapi_app - INFO - Fetched 245 expenses
+2026-01-26 10:23:30,584 - fastapi_app - INFO - GET /expenses called
+2026-01-26 10:23:30,585 - db_helper - INFO - show_all_expenses called
+2026-01-26 10:23:30,585 - db_helper - DEBUG - Opening database connection
+2026-01-26 10:23:30,615 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 10:23:30,616 - fastapi_app - INFO - Fetched 245 expenses
+2026-01-26 10:24:57,422 - fastapi_app - INFO - GET /summary/year-wise called
+2026-01-26 10:24:57,422 - db_helper - INFO - total_expense_by_year called
+2026-01-26 10:24:57,423 - db_helper - DEBUG - Opening database connection
+2026-01-26 10:24:57,468 - db_helper - INFO - total_expense_by_year success | Year total: 3
+2026-01-26 10:37:38,495 - db_helper - INFO - show_all_expenses called
+2026-01-26 10:37:38,495 - db_helper - DEBUG - Opening database connection
+2026-01-26 10:37:38,518 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 10:37:55,801 - db_helper - INFO - total_expense_today called
+2026-01-26 10:37:55,802 - db_helper - DEBUG - Opening database connection
+2026-01-26 10:37:55,822 - db_helper - INFO - total_expense_today success | Total expense today: 0
+2026-01-26 10:37:55,824 - db_helper - INFO - total_expense_this_month called
+2026-01-26 10:37:55,824 - db_helper - DEBUG - Opening database connection
+2026-01-26 10:37:55,835 - db_helper - INFO - total_expense_this_month success | Month total: 2500.00
+2026-01-26 10:38:15,176 - db_helper - INFO - total_expense_today called
+2026-01-26 10:38:15,176 - db_helper - DEBUG - Opening database connection
+2026-01-26 10:38:15,185 - db_helper - INFO - total_expense_today success | Total expense today: 0
+2026-01-26 10:38:15,186 - db_helper - INFO - total_expense_this_month called
+2026-01-26 10:38:15,186 - db_helper - DEBUG - Opening database connection
+2026-01-26 10:38:15,193 - db_helper - INFO - total_expense_this_month success | Month total: 2500.00
+2026-01-26 10:49:31,102 - db_helper - INFO - total_expense_today called
+2026-01-26 10:49:31,104 - db_helper - DEBUG - Opening database connection
+2026-01-26 10:49:31,129 - db_helper - INFO - total_expense_today success | Total expense today: 0
+2026-01-26 10:49:31,130 - db_helper - INFO - total_expense_this_month called
+2026-01-26 10:49:31,131 - db_helper - DEBUG - Opening database connection
+2026-01-26 10:49:31,139 - db_helper - INFO - total_expense_this_month success | Month total: 2500.0
+2026-01-26 10:49:31,141 - db_helper - INFO - daily_average_expense called
+2026-01-26 10:49:31,141 - db_helper - DEBUG - Opening database connection
+2026-01-26 10:49:31,149 - db_helper - INFO - daily_average_expense success | Daily Avg: 0
+2026-01-26 10:49:31,150 - db_helper - INFO - total_expense_by_year called
+2026-01-26 10:49:31,150 - db_helper - DEBUG - Opening database connection
+2026-01-26 10:49:31,162 - db_helper - INFO - total_expense_by_year success | Year total: 3
+2026-01-26 11:10:24,595 - db_helper - INFO - show_all_expenses called
+2026-01-26 11:10:24,595 - db_helper - DEBUG - Opening database connection
+2026-01-26 11:10:24,635 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 11:10:51,791 - db_helper - INFO - show_all_expenses called
+2026-01-26 11:10:51,791 - db_helper - DEBUG - Opening database connection
+2026-01-26 11:10:51,802 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 11:11:02,825 - db_helper - INFO - show_all_expenses called
+2026-01-26 11:11:02,825 - db_helper - DEBUG - Opening database connection
+2026-01-26 11:11:02,835 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 11:11:07,947 - db_helper - INFO - show_all_expenses called
+2026-01-26 11:11:07,948 - db_helper - DEBUG - Opening database connection
+2026-01-26 11:11:07,957 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 11:11:59,881 - db_helper - INFO - show_all_expenses called
+2026-01-26 11:11:59,882 - db_helper - DEBUG - Opening database connection
+2026-01-26 11:11:59,901 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 11:12:04,448 - db_helper - INFO - show_all_expenses called
+2026-01-26 11:12:04,448 - db_helper - DEBUG - Opening database connection
+2026-01-26 11:12:04,459 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 11:36:52,352 - db_helper - INFO - show_all_expenses called
+2026-01-26 11:36:52,352 - db_helper - DEBUG - Opening database connection
+2026-01-26 11:36:52,369 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 11:39:02,206 - db_helper - INFO - show_all_expenses called
+2026-01-26 11:39:02,206 - db_helper - DEBUG - Opening database connection
+2026-01-26 11:39:02,221 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 11:39:32,205 - db_helper - INFO - show_all_expenses called
+2026-01-26 11:39:32,206 - db_helper - DEBUG - Opening database connection
+2026-01-26 11:39:32,216 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 11:40:10,317 - db_helper - INFO - show_all_expenses called
+2026-01-26 11:40:10,317 - db_helper - DEBUG - Opening database connection
+2026-01-26 11:40:10,333 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 11:40:24,132 - db_helper - INFO - show_all_expenses called
+2026-01-26 11:40:24,132 - db_helper - DEBUG - Opening database connection
+2026-01-26 11:40:24,145 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 14:42:10,714 - db_helper - INFO - show_all_expenses called
+2026-01-26 14:42:10,727 - db_helper - DEBUG - Opening database connection
+2026-01-26 14:42:11,197 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 14:42:19,367 - db_helper - INFO - show_all_expenses called
+2026-01-26 14:42:19,368 - db_helper - DEBUG - Opening database connection
+2026-01-26 14:42:19,378 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 14:48:56,311 - db_helper - INFO - show_all_expenses called
+2026-01-26 14:48:56,312 - db_helper - DEBUG - Opening database connection
+2026-01-26 14:48:56,322 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 14:49:04,848 - db_helper - INFO - show_all_expenses called
+2026-01-26 14:49:04,849 - db_helper - DEBUG - Opening database connection
+2026-01-26 14:49:04,859 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 14:49:09,608 - db_helper - INFO - show_all_expenses called
+2026-01-26 14:49:09,608 - db_helper - DEBUG - Opening database connection
+2026-01-26 14:49:09,618 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 14:49:18,777 - db_helper - INFO - show_all_expenses called
+2026-01-26 14:49:18,778 - db_helper - DEBUG - Opening database connection
+2026-01-26 14:49:18,788 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 14:49:23,100 - db_helper - INFO - show_all_expenses called
+2026-01-26 14:49:23,101 - db_helper - DEBUG - Opening database connection
+2026-01-26 14:49:23,110 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 14:49:23,118 - db_helper - INFO - search_by_date_range called | start_date=2026-01-26, end_date=2026-01-26
+2026-01-26 14:49:23,118 - db_helper - DEBUG - Opening database connection
+2026-01-26 14:49:23,149 - db_helper - INFO - filter_by_date_range success | Records found: 0
+2026-01-26 14:49:30,664 - db_helper - INFO - show_all_expenses called
+2026-01-26 14:49:30,665 - db_helper - DEBUG - Opening database connection
+2026-01-26 14:49:30,675 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 14:49:30,681 - db_helper - INFO - total_expense_today called
+2026-01-26 14:49:30,682 - db_helper - DEBUG - Opening database connection
+2026-01-26 14:49:30,702 - db_helper - INFO - total_expense_today success | Total expense today: 0
+2026-01-26 14:49:30,703 - db_helper - INFO - total_expense_this_month called
+2026-01-26 14:49:30,703 - db_helper - DEBUG - Opening database connection
+2026-01-26 14:49:30,711 - db_helper - INFO - total_expense_this_month success | Month total: 2500.0
+2026-01-26 14:49:30,713 - db_helper - INFO - daily_average_expense called
+2026-01-26 14:49:30,713 - db_helper - DEBUG - Opening database connection
+2026-01-26 14:49:30,723 - db_helper - INFO - daily_average_expense success | Daily Avg: 0
+2026-01-26 14:49:30,724 - db_helper - INFO - total_expense_by_year called
+2026-01-26 14:49:30,725 - db_helper - DEBUG - Opening database connection
+2026-01-26 14:49:30,740 - db_helper - INFO - total_expense_by_year success | Year total: 3
+2026-01-26 14:49:39,308 - db_helper - INFO - show_all_expenses called
+2026-01-26 14:49:39,309 - db_helper - DEBUG - Opening database connection
+2026-01-26 14:49:39,320 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 14:49:56,639 - db_helper - INFO - show_all_expenses called
+2026-01-26 14:49:56,640 - db_helper - DEBUG - Opening database connection
+2026-01-26 14:49:56,651 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 14:49:56,656 - db_helper - INFO - total_expense_today called
+2026-01-26 14:49:56,657 - db_helper - DEBUG - Opening database connection
+2026-01-26 14:49:56,664 - db_helper - INFO - total_expense_today success | Total expense today: 0
+2026-01-26 14:49:56,665 - db_helper - INFO - total_expense_this_month called
+2026-01-26 14:49:56,666 - db_helper - DEBUG - Opening database connection
+2026-01-26 14:49:56,677 - db_helper - INFO - total_expense_this_month success | Month total: 2500.0
+2026-01-26 14:49:56,678 - db_helper - INFO - daily_average_expense called
+2026-01-26 14:49:56,678 - db_helper - DEBUG - Opening database connection
+2026-01-26 14:49:56,686 - db_helper - INFO - daily_average_expense success | Daily Avg: 0
+2026-01-26 14:49:56,688 - db_helper - INFO - total_expense_by_year called
+2026-01-26 14:49:56,688 - db_helper - DEBUG - Opening database connection
+2026-01-26 14:49:56,694 - db_helper - INFO - total_expense_by_year success | Year total: 3
+2026-01-26 14:50:01,312 - db_helper - INFO - show_all_expenses called
+2026-01-26 14:50:01,313 - db_helper - DEBUG - Opening database connection
+2026-01-26 14:50:01,323 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 14:53:34,952 - db_helper - INFO - show_all_expenses called
+2026-01-26 14:53:34,953 - db_helper - DEBUG - Opening database connection
+2026-01-26 14:53:34,964 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 14:53:37,759 - db_helper - INFO - show_all_expenses called
+2026-01-26 14:53:37,759 - db_helper - DEBUG - Opening database connection
+2026-01-26 14:53:37,768 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 14:53:44,296 - db_helper - INFO - show_all_expenses called
+2026-01-26 14:53:44,296 - db_helper - DEBUG - Opening database connection
+2026-01-26 14:53:44,307 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 14:53:50,266 - db_helper - INFO - show_all_expenses called
+2026-01-26 14:53:50,267 - db_helper - DEBUG - Opening database connection
+2026-01-26 14:53:50,277 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 14:53:54,815 - db_helper - INFO - show_all_expenses called
+2026-01-26 14:53:54,816 - db_helper - DEBUG - Opening database connection
+2026-01-26 14:53:54,826 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 15:01:03,800 - db_helper - INFO - search_by_date_range called | start_date=2023-01-01, end_date=2026-01-26
+2026-01-26 15:01:03,806 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:01:03,821 - db_helper - INFO - filter_by_date_range success | Records found: 20
+2026-01-26 15:01:49,572 - db_helper - INFO - search_by_date_range called | start_date=2023-01-01, end_date=2026-01-26
+2026-01-26 15:01:49,573 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:01:49,587 - db_helper - INFO - filter_by_date_range success | Records found: 20
+2026-01-26 15:01:50,218 - db_helper - INFO - search_by_date_range called | start_date=2023-01-01, end_date=2026-01-26
+2026-01-26 15:01:50,218 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:01:50,227 - db_helper - INFO - filter_by_date_range success | Records found: 20
+2026-01-26 15:01:54,974 - db_helper - INFO - search_by_date_range called | start_date=2023-01-01, end_date=2026-01-26
+2026-01-26 15:01:54,974 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:01:54,984 - db_helper - INFO - filter_by_date_range success | Records found: 20
+2026-01-26 15:04:58,586 - db_helper - INFO - show_all_expenses called
+2026-01-26 15:04:58,587 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:04:58,595 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 15:05:02,196 - db_helper - INFO - search_by_date_range called | start_date=2023-01-01, end_date=2026-01-26
+2026-01-26 15:05:02,196 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:05:02,206 - db_helper - INFO - filter_by_date_range success | Records found: 20
+2026-01-26 15:05:18,072 - db_helper - INFO - search_by_date_range called | start_date=2023-01-01, end_date=2026-01-06
+2026-01-26 15:05:18,073 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:05:18,080 - db_helper - INFO - filter_by_date_range success | Records found: 15
+2026-01-26 15:05:32,244 - db_helper - INFO - search_by_date_range called | start_date=2023-01-01, end_date=2026-01-06
+2026-01-26 15:05:32,244 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:05:32,253 - db_helper - INFO - filter_by_date_range success | Records found: 15
+2026-01-26 15:07:01,592 - db_helper - INFO - search_by_date_range called | start_date=2023-01-02, end_date=2026-01-06
+2026-01-26 15:07:01,592 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:07:01,601 - db_helper - INFO - filter_by_date_range success | Records found: 15
+2026-01-26 15:07:12,384 - db_helper - INFO - show_all_expenses called
+2026-01-26 15:07:12,384 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:07:12,394 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 15:07:42,879 - db_helper - INFO - show_all_expenses called
+2026-01-26 15:07:42,879 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:07:42,889 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 15:08:44,256 - db_helper - INFO - show_all_expenses called
+2026-01-26 15:08:44,256 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:08:44,265 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 15:11:14,768 - db_helper - INFO - show_all_expenses called
+2026-01-26 15:11:14,769 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:11:14,778 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 15:11:19,168 - db_helper - INFO - search_by_id called
+2026-01-26 15:11:19,169 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:11:19,182 - db_helper - INFO - search_by_id success | Record found
+2026-01-26 15:11:24,349 - db_helper - INFO - search_by_category called | category=Food
+2026-01-26 15:11:24,349 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:11:24,359 - db_helper - INFO - search_by_category success | Records found: 127
+2026-01-26 15:11:37,470 - db_helper - INFO - search_by_transaction_type called | transaction_type=debit
+2026-01-26 15:11:37,470 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:11:37,480 - db_helper - INFO - search_by_transaction_type success | Records found: 20
+2026-01-26 15:12:03,376 - db_helper - INFO - search_by_date_range called | start_date=2023-01-01, end_date=2026-01-26
+2026-01-26 15:12:03,381 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:12:03,409 - db_helper - INFO - filter_by_date_range success | Records found: 20
+2026-01-26 15:16:44,063 - db_helper - INFO - search_by_date_range called | start_date=2023-01-01, end_date=2026-01-26
+2026-01-26 15:16:44,063 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:16:44,072 - db_helper - INFO - filter_by_date_range success | Records found: 20
+2026-01-26 15:16:48,640 - db_helper - INFO - search_by_amount_range called | min_amount=0, max_amount=100000
+2026-01-26 15:16:48,641 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:16:48,649 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-26 15:16:54,840 - db_helper - INFO - search_by_date_range called | start_date=2023-01-01, end_date=2026-01-26
+2026-01-26 15:16:54,840 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:16:54,849 - db_helper - INFO - filter_by_date_range success | Records found: 20
+2026-01-26 15:17:15,379 - db_helper - INFO - search_by_date_range called | start_date=2023-01-01, end_date=2026-01-26
+2026-01-26 15:17:15,380 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:17:15,391 - db_helper - INFO - filter_by_date_range success | Records found: 20
+2026-01-26 15:18:08,932 - db_helper - INFO - search_by_amount_range called | min_amount=0, max_amount=100000
+2026-01-26 15:18:08,933 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:18:08,942 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-26 15:21:04,897 - db_helper - INFO - show_all_expenses called
+2026-01-26 15:21:04,897 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:21:04,907 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 15:21:12,531 - db_helper - INFO - search_by_id called
+2026-01-26 15:21:12,531 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:21:12,541 - db_helper - INFO - search_by_id success | Record found
+2026-01-26 15:21:29,637 - db_helper - INFO - search_by_category called | category=Food
+2026-01-26 15:21:29,638 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:21:29,647 - db_helper - INFO - search_by_category success | Records found: 127
+2026-01-26 15:21:38,197 - db_helper - INFO - search_by_transaction_type called | transaction_type=credit
+2026-01-26 15:21:38,198 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:21:38,205 - db_helper - INFO - search_by_transaction_type success | Records found: 0
+2026-01-26 15:21:41,223 - db_helper - INFO - search_by_transaction_type called | transaction_type=debit
+2026-01-26 15:21:41,223 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:21:41,235 - db_helper - INFO - search_by_transaction_type success | Records found: 20
+2026-01-26 15:21:54,606 - db_helper - INFO - search_by_date_range called | start_date=2024-01-16, end_date=2026-01-05
+2026-01-26 15:21:54,607 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:21:54,615 - db_helper - INFO - filter_by_date_range success | Records found: 1
+2026-01-26 15:27:22,216 - db_helper - INFO - show_all_expenses called
+2026-01-26 15:27:22,216 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:27:22,229 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 15:32:19,849 - db_helper - INFO - show_all_expenses called
+2026-01-26 15:32:19,849 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:32:19,863 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 15:34:51,993 - db_helper - INFO - show_all_expenses called
+2026-01-26 15:34:51,993 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:34:52,006 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 15:35:29,940 - db_helper - INFO - search_by_date_range called | start_date=2024-01-16, end_date=2024-02-08
+2026-01-26 15:35:29,940 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:35:29,951 - db_helper - INFO - filter_by_date_range success | Records found: 0
+2026-01-26 15:35:43,500 - db_helper - INFO - search_by_date_range called | start_date=2024-01-16, end_date=2025-02-04
+2026-01-26 15:35:43,500 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:35:43,509 - db_helper - INFO - filter_by_date_range success | Records found: 1
+2026-01-26 15:42:36,686 - db_helper - INFO - show_all_expenses called
+2026-01-26 15:42:36,686 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:42:36,717 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 15:42:44,459 - db_helper - INFO - show_all_expenses called
+2026-01-26 15:42:44,459 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:42:44,473 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 15:42:49,707 - db_helper - INFO - show_all_expenses called
+2026-01-26 15:42:49,707 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:42:49,724 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 15:44:59,347 - db_helper - INFO - show_all_expenses called
+2026-01-26 15:44:59,348 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:44:59,365 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 15:45:19,759 - db_helper - INFO - search_by_id called
+2026-01-26 15:45:19,760 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:45:19,769 - db_helper - INFO - search_by_id success | Record found
+2026-01-26 15:45:33,682 - db_helper - INFO - search_by_id called
+2026-01-26 15:45:33,682 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:45:33,692 - db_helper - INFO - search_by_id success | Record found
+2026-01-26 15:45:40,866 - db_helper - INFO - search_by_category called | category=Entertainment
+2026-01-26 15:45:40,866 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:45:40,874 - db_helper - INFO - search_by_category success | Records found: 0
+2026-01-26 15:45:44,068 - db_helper - INFO - search_by_category called | category=Bills
+2026-01-26 15:45:44,069 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:45:44,082 - db_helper - INFO - search_by_category success | Records found: 0
+2026-01-26 15:45:46,826 - db_helper - INFO - search_by_category called | category=Food
+2026-01-26 15:45:46,826 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:45:46,834 - db_helper - INFO - search_by_category success | Records found: 127
+2026-01-26 15:45:59,357 - db_helper - INFO - search_by_transaction_type called | transaction_type=credit
+2026-01-26 15:45:59,358 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:45:59,367 - db_helper - INFO - search_by_transaction_type success | Records found: 0
+2026-01-26 15:46:01,036 - db_helper - INFO - search_by_transaction_type called | transaction_type=debit
+2026-01-26 15:46:01,037 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:46:01,044 - db_helper - INFO - search_by_transaction_type success | Records found: 20
+2026-01-26 15:46:23,554 - db_helper - INFO - search_by_date_range called | start_date=2023-01-01, end_date=2026-01-26
+2026-01-26 15:46:23,554 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:46:23,562 - db_helper - INFO - filter_by_date_range success | Records found: 20
+2026-01-26 15:46:56,294 - db_helper - INFO - search_by_date_range called | start_date=2023-01-01, end_date=2026-01-26
+2026-01-26 15:46:56,294 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:46:56,301 - db_helper - INFO - filter_by_date_range success | Records found: 20
+2026-01-26 15:50:56,984 - db_helper - INFO - show_all_expenses called
+2026-01-26 15:50:56,984 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:50:56,993 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 15:51:08,996 - db_helper - INFO - show_all_expenses called
+2026-01-26 15:51:08,996 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:51:09,006 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 15:56:11,795 - db_helper - INFO - search_by_id called
+2026-01-26 15:56:11,796 - db_helper - DEBUG - Opening database connection
+2026-01-26 15:56:11,807 - db_helper - INFO - search_by_id success | Record found
+2026-01-26 16:01:10,402 - db_helper - INFO - show_all_expenses called
+2026-01-26 16:01:10,403 - db_helper - DEBUG - Opening database connection
+2026-01-26 16:01:10,417 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 16:09:07,985 - db_helper - INFO - add_expense called | Date=2026-01-26, Category=Others, SubCategory=papa, Type=debit, Amount=1500.0
+2026-01-26 16:09:07,985 - db_helper - DEBUG - Opening database connection
+2026-01-26 16:09:08,037 - db_helper - INFO - Expense added successfully
+2026-01-26 16:09:11,036 - db_helper - INFO - show_all_expenses called
+2026-01-26 16:09:11,036 - db_helper - DEBUG - Opening database connection
+2026-01-26 16:09:11,049 - db_helper - INFO - show_all_expenses success | Records fetched: 246
+2026-01-26 16:13:24,957 - db_helper - INFO - show_all_expenses called
+2026-01-26 16:13:24,957 - db_helper - DEBUG - Opening database connection
+2026-01-26 16:13:24,975 - db_helper - INFO - show_all_expenses success | Records fetched: 246
+2026-01-26 16:13:33,418 - db_helper - INFO - search_by_id called
+2026-01-26 16:13:33,418 - db_helper - DEBUG - Opening database connection
+2026-01-26 16:13:33,427 - db_helper - INFO - search_by_id success | Record found
+2026-01-26 16:13:33,427 - db_helper - INFO - delete_expense called | id=247
+2026-01-26 16:13:33,428 - db_helper - DEBUG - Opening database connection
+2026-01-26 16:13:33,450 - db_helper - INFO - delete_expense success | id=247 deleted
+2026-01-26 16:13:39,034 - db_helper - INFO - search_by_id called
+2026-01-26 16:13:39,034 - db_helper - DEBUG - Opening database connection
+2026-01-26 16:13:39,041 - db_helper - WARNING - search_by_id completed | No record found
+2026-01-26 16:16:35,314 - db_helper - INFO - add_expense called | Date=2026-01-26, Category=Travel, SubCategory=papa, Type=debit, Amount=1500.0
+2026-01-26 16:16:35,314 - db_helper - DEBUG - Opening database connection
+2026-01-26 16:16:35,329 - db_helper - INFO - Expense added successfully
+2026-01-26 16:16:41,861 - db_helper - INFO - show_all_expenses called
+2026-01-26 16:16:41,861 - db_helper - DEBUG - Opening database connection
+2026-01-26 16:16:41,870 - db_helper - INFO - show_all_expenses success | Records fetched: 246
+2026-01-26 16:16:51,121 - db_helper - INFO - search_by_id called
+2026-01-26 16:16:51,122 - db_helper - DEBUG - Opening database connection
+2026-01-26 16:16:51,129 - db_helper - INFO - search_by_id success | Record found
+2026-01-26 16:16:51,131 - db_helper - INFO - delete_expense called | id=248
+2026-01-26 16:16:51,131 - db_helper - DEBUG - Opening database connection
+2026-01-26 16:16:51,142 - db_helper - INFO - delete_expense success | id=248 deleted
+2026-01-26 16:17:02,760 - db_helper - INFO - search_by_date_range called | start_date=2023-01-01, end_date=2026-01-26
+2026-01-26 16:17:02,761 - db_helper - DEBUG - Opening database connection
+2026-01-26 16:17:02,769 - db_helper - INFO - filter_by_date_range success | Records found: 20
+2026-01-26 16:20:57,532 - db_helper - INFO - add_expense called | Date=2026-01-26, Category=Bills, SubCategory=, Type=debit, Amount=1500.0
+2026-01-26 16:20:57,533 - db_helper - DEBUG - Opening database connection
+2026-01-26 16:20:57,547 - db_helper - INFO - Expense added successfully
+2026-01-26 16:21:03,477 - db_helper - INFO - show_all_expenses called
+2026-01-26 16:21:03,478 - db_helper - DEBUG - Opening database connection
+2026-01-26 16:21:03,490 - db_helper - INFO - show_all_expenses success | Records fetched: 246
+2026-01-26 16:21:11,322 - db_helper - INFO - search_by_id called
+2026-01-26 16:21:11,322 - db_helper - DEBUG - Opening database connection
+2026-01-26 16:21:11,330 - db_helper - INFO - search_by_id success | Record found
+2026-01-26 16:21:11,331 - db_helper - INFO - delete_expense called | id=249
+2026-01-26 16:21:11,331 - db_helper - DEBUG - Opening database connection
+2026-01-26 16:21:11,341 - db_helper - INFO - delete_expense success | id=249 deleted
+2026-01-26 16:29:00,779 - db_helper - INFO - search_by_id called
+2026-01-26 16:29:00,780 - db_helper - DEBUG - Opening database connection
+2026-01-26 16:29:00,793 - db_helper - INFO - search_by_id success | Record found
+2026-01-26 16:29:06,039 - db_helper - INFO - search_by_id called
+2026-01-26 16:29:06,039 - db_helper - DEBUG - Opening database connection
+2026-01-26 16:29:06,047 - db_helper - INFO - search_by_id success | Record found
+2026-01-26 16:29:08,344 - db_helper - INFO - search_by_id called
+2026-01-26 16:29:08,345 - db_helper - DEBUG - Opening database connection
+2026-01-26 16:29:08,355 - db_helper - INFO - search_by_id success | Record found
+2026-01-26 16:29:10,872 - db_helper - INFO - search_by_id called
+2026-01-26 16:29:10,872 - db_helper - DEBUG - Opening database connection
+2026-01-26 16:29:10,881 - db_helper - INFO - search_by_id success | Record found
+2026-01-26 16:29:13,226 - db_helper - INFO - search_by_id called
+2026-01-26 16:29:13,227 - db_helper - DEBUG - Opening database connection
+2026-01-26 16:29:13,236 - db_helper - INFO - search_by_id success | Record found
+2026-01-26 16:29:15,306 - db_helper - INFO - search_by_category called | category=Food
+2026-01-26 16:29:15,306 - db_helper - DEBUG - Opening database connection
+2026-01-26 16:29:15,315 - db_helper - INFO - search_by_category success | Records found: 127
+2026-01-26 16:29:19,316 - db_helper - INFO - search_by_category called | category=Entertainment
+2026-01-26 16:29:19,317 - db_helper - DEBUG - Opening database connection
+2026-01-26 16:29:19,325 - db_helper - INFO - search_by_category success | Records found: 0
+2026-01-26 16:29:45,237 - db_helper - INFO - show_all_expenses called
+2026-01-26 16:29:45,238 - db_helper - DEBUG - Opening database connection
+2026-01-26 16:29:45,252 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 16:29:56,193 - db_helper - INFO - search_by_date_range called | start_date=2023-01-01, end_date=2026-01-26
+2026-01-26 16:29:56,193 - db_helper - DEBUG - Opening database connection
+2026-01-26 16:29:56,201 - db_helper - INFO - filter_by_date_range success | Records found: 20
+2026-01-26 16:29:59,411 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=100000.0
+2026-01-26 16:29:59,412 - db_helper - DEBUG - Opening database connection
+2026-01-26 16:29:59,423 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-26 16:30:05,764 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=1200.0
+2026-01-26 16:30:05,764 - db_helper - DEBUG - Opening database connection
+2026-01-26 16:30:05,772 - db_helper - INFO - filter_by_amount_range success | Records found: 4
+2026-01-26 16:30:13,071 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=1600.0
+2026-01-26 16:30:13,071 - db_helper - DEBUG - Opening database connection
+2026-01-26 16:30:13,079 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-26 18:31:36,154 - db_helper - INFO - show_all_expenses called
+2026-01-26 18:31:36,156 - db_helper - DEBUG - Opening database connection
+2026-01-26 18:31:36,301 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 18:32:36,895 - db_helper - INFO - add_expense called | Date=2026-01-26, Category=Travel, SubCategory=company, Type=debit, Amount=50.0
+2026-01-26 18:32:36,896 - db_helper - DEBUG - Opening database connection
+2026-01-26 18:32:36,905 - db_helper - INFO - Expense added successfully
+2026-01-26 18:32:40,921 - db_helper - INFO - show_all_expenses called
+2026-01-26 18:32:40,921 - db_helper - DEBUG - Opening database connection
+2026-01-26 18:32:40,931 - db_helper - INFO - show_all_expenses success | Records fetched: 246
+2026-01-26 18:33:04,651 - db_helper - INFO - show_all_expenses called
+2026-01-26 18:33:04,652 - db_helper - DEBUG - Opening database connection
+2026-01-26 18:33:04,664 - db_helper - INFO - show_all_expenses success | Records fetched: 246
+2026-01-26 18:33:11,864 - db_helper - INFO - show_all_expenses called
+2026-01-26 18:33:11,864 - db_helper - DEBUG - Opening database connection
+2026-01-26 18:33:11,875 - db_helper - INFO - show_all_expenses success | Records fetched: 246
+2026-01-26 18:33:20,975 - db_helper - INFO - search_by_id called
+2026-01-26 18:33:20,977 - db_helper - DEBUG - Opening database connection
+2026-01-26 18:33:20,986 - db_helper - INFO - search_by_id success | Record found
+2026-01-26 18:33:29,867 - db_helper - INFO - update_expense called | id=250
+2026-01-26 18:33:29,868 - db_helper - DEBUG - Opening database connection
+2026-01-26 18:33:29,879 - db_helper - INFO - update_expense success | id=250 updated
+2026-01-26 18:33:34,699 - db_helper - INFO - show_all_expenses called
+2026-01-26 18:33:34,699 - db_helper - DEBUG - Opening database connection
+2026-01-26 18:33:34,711 - db_helper - INFO - show_all_expenses success | Records fetched: 246
+2026-01-26 18:33:50,177 - db_helper - INFO - search_by_id called
+2026-01-26 18:33:50,178 - db_helper - DEBUG - Opening database connection
+2026-01-26 18:33:50,185 - db_helper - INFO - search_by_id success | Record found
+2026-01-26 18:33:50,186 - db_helper - INFO - delete_expense called | id=250
+2026-01-26 18:33:50,186 - db_helper - DEBUG - Opening database connection
+2026-01-26 18:33:50,194 - db_helper - INFO - delete_expense success | id=250 deleted
+2026-01-26 18:33:53,130 - db_helper - INFO - show_all_expenses called
+2026-01-26 18:33:53,131 - db_helper - DEBUG - Opening database connection
+2026-01-26 18:33:53,142 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 18:34:27,927 - db_helper - INFO - search_by_category called | category=Food
+2026-01-26 18:34:27,927 - db_helper - DEBUG - Opening database connection
+2026-01-26 18:34:27,939 - db_helper - INFO - search_by_category success | Records found: 127
+2026-01-26 18:34:39,916 - db_helper - INFO - search_by_transaction_type called | transaction_type=debit
+2026-01-26 18:34:39,916 - db_helper - DEBUG - Opening database connection
+2026-01-26 18:34:39,928 - db_helper - INFO - search_by_transaction_type success | Records found: 20
+2026-01-26 18:34:55,354 - db_helper - INFO - search_by_date_range called | start_date=2023-01-01, end_date=2026-01-26
+2026-01-26 18:34:55,355 - db_helper - DEBUG - Opening database connection
+2026-01-26 18:34:55,368 - db_helper - INFO - filter_by_date_range success | Records found: 20
+2026-01-26 18:35:34,448 - db_helper - INFO - search_by_date_range called | start_date=2023-01-01, end_date=2026-01-26
+2026-01-26 18:35:34,449 - db_helper - DEBUG - Opening database connection
+2026-01-26 18:35:34,456 - db_helper - INFO - filter_by_date_range success | Records found: 20
+2026-01-26 18:36:49,816 - db_helper - INFO - search_by_amount_range called | min_amount=100.0, max_amount=2500.0
+2026-01-26 18:36:49,817 - db_helper - DEBUG - Opening database connection
+2026-01-26 18:36:49,828 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-26 18:40:14,755 - db_helper - INFO - show_all_expenses called
+2026-01-26 18:40:14,756 - db_helper - DEBUG - Opening database connection
+2026-01-26 18:40:14,765 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-26 18:40:48,260 - db_helper - INFO - search_by_date_range called | start_date=2023-01-01, end_date=2026-01-26
+2026-01-26 18:40:48,260 - db_helper - DEBUG - Opening database connection
+2026-01-26 18:40:48,268 - db_helper - INFO - filter_by_date_range success | Records found: 20
+2026-01-26 18:41:48,353 - db_helper - INFO - search_by_transaction_type called | transaction_type=debit
+2026-01-26 18:41:48,354 - db_helper - DEBUG - Opening database connection
+2026-01-26 18:41:48,363 - db_helper - INFO - search_by_transaction_type success | Records found: 20
+2026-01-27 08:56:53,946 - db_helper - INFO - search_by_transaction_type called | transaction_type=debit
+2026-01-27 08:56:53,947 - db_helper - DEBUG - Opening database connection
+2026-01-27 08:56:54,177 - db_helper - INFO - search_by_transaction_type success | Records found: 20
+2026-01-27 08:56:56,201 - db_helper - INFO - search_by_transaction_type called | transaction_type=credit
+2026-01-27 08:56:56,201 - db_helper - DEBUG - Opening database connection
+2026-01-27 08:56:56,209 - db_helper - INFO - search_by_transaction_type success | Records found: 0
+2026-01-27 08:56:58,088 - db_helper - INFO - search_by_transaction_type called | transaction_type=debit
+2026-01-27 08:56:58,092 - db_helper - DEBUG - Opening database connection
+2026-01-27 08:56:58,099 - db_helper - INFO - search_by_transaction_type success | Records found: 20
+2026-01-27 09:00:20,359 - db_helper - INFO - search_by_transaction_type called | transaction_type=credit
+2026-01-27 09:00:20,359 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:00:20,368 - db_helper - INFO - search_by_transaction_type success | Records found: 0
+2026-01-27 09:04:29,616 - db_helper - INFO - search_by_transaction_type called | transaction_type=credit
+2026-01-27 09:04:29,617 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:04:29,626 - db_helper - INFO - search_by_transaction_type success | Records found: 0
+2026-01-27 09:04:30,950 - db_helper - INFO - search_by_transaction_type called | transaction_type=debit
+2026-01-27 09:04:30,951 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:04:30,960 - db_helper - INFO - search_by_transaction_type success | Records found: 20
+2026-01-27 09:06:32,500 - db_helper - INFO - search_by_transaction_type called | transaction_type=Income
+2026-01-27 09:06:32,500 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:06:32,510 - db_helper - INFO - search_by_transaction_type success | Records found: 43
+2026-01-27 09:06:36,210 - db_helper - INFO - search_by_transaction_type called | transaction_type=Expense
+2026-01-27 09:06:36,210 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:06:36,219 - db_helper - INFO - search_by_transaction_type success | Records found: 182
+2026-01-27 09:06:39,134 - db_helper - INFO - search_by_transaction_type called | transaction_type=Income
+2026-01-27 09:06:39,134 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:06:39,142 - db_helper - INFO - search_by_transaction_type success | Records found: 43
+2026-01-27 09:07:06,537 - db_helper - INFO - search_by_transaction_type called | transaction_type=Income
+2026-01-27 09:07:06,537 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:07:06,546 - db_helper - INFO - search_by_transaction_type success | Records found: 43
+2026-01-27 09:14:51,002 - db_helper - INFO - show_all_expenses called
+2026-01-27 09:14:51,002 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:14:51,013 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-27 09:15:04,305 - db_helper - INFO - search_by_id called
+2026-01-27 09:15:04,306 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:15:04,314 - db_helper - INFO - search_by_id success | Record found
+2026-01-27 09:15:13,871 - db_helper - INFO - search_by_transaction_type called | transaction_type=Income
+2026-01-27 09:15:13,872 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:15:13,879 - db_helper - INFO - search_by_transaction_type success | Records found: 43
+2026-01-27 09:15:23,056 - db_helper - INFO - search_by_date_range called | start_date=2023-01-01, end_date=2026-01-27
+2026-01-27 09:15:23,057 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:15:23,064 - db_helper - INFO - filter_by_date_range success | Records found: 20
+2026-01-27 09:16:09,075 - db_helper - INFO - search_by_transaction_type called | transaction_type=Income
+2026-01-27 09:16:09,075 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:16:09,083 - db_helper - INFO - search_by_transaction_type success | Records found: 43
+2026-01-27 09:20:32,474 - db_helper - INFO - search_by_date_range called | start_date=2023-01-01, end_date=2026-01-27
+2026-01-27 09:20:32,474 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:20:32,484 - db_helper - INFO - filter_by_date_range success | Records found: 20
+2026-01-27 09:20:54,709 - db_helper - INFO - search_by_date_range called | start_date=2023-01-01, end_date=2026-01-27
+2026-01-27 09:20:54,710 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:20:54,719 - db_helper - INFO - filter_by_date_range success | Records found: 20
+2026-01-27 09:21:21,266 - db_helper - INFO - search_by_date_range called | start_date=2021-01-01, end_date=2026-01-27
+2026-01-27 09:21:21,266 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:21:21,278 - db_helper - INFO - filter_by_date_range success | Records found: 245
+2026-01-27 09:25:31,596 - db_helper - INFO - add_expense called | Date=2026-01-27, Category=Food, SubCategory=cooking oil, Type=Expense, Amount=500.0
+2026-01-27 09:25:31,596 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:25:31,613 - db_helper - INFO - Expense added successfully
+2026-01-27 09:25:37,597 - db_helper - INFO - show_all_expenses called
+2026-01-27 09:25:37,597 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:25:37,608 - db_helper - INFO - show_all_expenses success | Records fetched: 246
+2026-01-27 09:26:33,589 - db_helper - INFO - search_by_id called
+2026-01-27 09:26:33,589 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:26:33,599 - db_helper - INFO - search_by_id success | Record found
+2026-01-27 09:26:40,437 - db_helper - INFO - update_expense called | id=251
+2026-01-27 09:26:40,437 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:26:40,446 - db_helper - INFO - update_expense success | id=251 updated
+2026-01-27 09:26:43,349 - db_helper - INFO - show_all_expenses called
+2026-01-27 09:26:43,349 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:26:43,362 - db_helper - INFO - show_all_expenses success | Records fetched: 246
+2026-01-27 09:28:11,364 - db_helper - INFO - search_by_id called
+2026-01-27 09:28:11,364 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:28:11,371 - db_helper - INFO - search_by_id success | Record found
+2026-01-27 09:28:11,372 - db_helper - INFO - delete_expense called | id=251
+2026-01-27 09:28:11,372 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:28:11,381 - db_helper - INFO - delete_expense success | id=251 deleted
+2026-01-27 09:28:14,925 - db_helper - INFO - show_all_expenses called
+2026-01-27 09:28:14,925 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:28:14,937 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-27 09:29:05,276 - db_helper - INFO - show_all_expenses called
+2026-01-27 09:29:05,276 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:29:05,287 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-27 09:30:54,473 - db_helper - INFO - show_all_expenses called
+2026-01-27 09:30:54,474 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:30:54,490 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-27 09:32:16,455 - db_helper - INFO - search_by_id called
+2026-01-27 09:32:16,455 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:32:16,463 - db_helper - INFO - search_by_id success | Record found
+2026-01-27 09:33:30,857 - db_helper - INFO - search_by_id called
+2026-01-27 09:33:30,858 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:33:30,866 - db_helper - INFO - search_by_id success | Record found
+2026-01-27 09:34:17,508 - db_helper - INFO - search_by_category called | category=Salary
+2026-01-27 09:34:17,509 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:34:17,519 - db_helper - INFO - search_by_category success | Records found: 12
+2026-01-27 09:34:37,971 - db_helper - INFO - search_by_category called | category=Salary
+2026-01-27 09:34:37,971 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:34:37,979 - db_helper - INFO - search_by_category success | Records found: 12
+2026-01-27 09:35:24,186 - db_helper - INFO - search_by_transaction_type called | transaction_type=Income
+2026-01-27 09:35:24,186 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:35:24,194 - db_helper - INFO - search_by_transaction_type success | Records found: 43
+2026-01-27 09:36:39,501 - db_helper - INFO - search_by_date_range called | start_date=2021-01-01, end_date=2022-01-01
+2026-01-27 09:36:39,501 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:36:39,513 - db_helper - INFO - filter_by_date_range success | Records found: 225
+2026-01-27 09:36:54,766 - db_helper - INFO - search_by_date_range called | start_date=2021-01-01, end_date=2022-01-01
+2026-01-27 09:36:54,767 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:36:54,778 - db_helper - INFO - filter_by_date_range success | Records found: 225
+2026-01-27 09:37:02,340 - db_helper - INFO - search_by_date_range called | start_date=2021-01-01, end_date=2022-01-01
+2026-01-27 09:37:02,341 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:37:02,352 - db_helper - INFO - filter_by_date_range success | Records found: 225
+2026-01-27 09:37:27,812 - db_helper - INFO - search_by_date_range called | start_date=2023-01-01, end_date=2026-01-27
+2026-01-27 09:37:27,812 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:37:27,821 - db_helper - INFO - filter_by_date_range success | Records found: 20
+2026-01-27 09:43:04,525 - db_helper - INFO - search_by_date_range called | start_date=2023-01-01, end_date=2026-01-27
+2026-01-27 09:43:04,526 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:43:04,535 - db_helper - INFO - filter_by_date_range success | Records found: 20
+2026-01-27 09:43:19,540 - db_helper - INFO - search_by_date_range called | start_date=2021-01-01, end_date=2026-01-27
+2026-01-27 09:43:19,540 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:43:19,554 - db_helper - INFO - filter_by_date_range success | Records found: 245
+2026-01-27 09:51:26,044 - db_helper - INFO - search_by_sub_category called | sub_category=khet
+2026-01-27 09:51:26,044 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:51:26,051 - db_helper - INFO - search_by_sub_category success | Records found: 0
+2026-01-27 09:51:31,123 - db_helper - INFO - search_by_sub_category called | sub_category=food
+2026-01-27 09:51:31,124 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:51:31,134 - db_helper - INFO - search_by_sub_category success | Records found: 0
+2026-01-27 09:51:35,440 - db_helper - INFO - show_all_expenses called
+2026-01-27 09:51:35,440 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:51:35,453 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-27 09:51:46,750 - db_helper - INFO - search_by_sub_category called | sub_category=papa
+2026-01-27 09:51:46,750 - db_helper - DEBUG - Opening database connection
+2026-01-27 09:51:46,758 - db_helper - INFO - search_by_sub_category success | Records found: 14
+2026-01-27 10:21:41,562 - db_helper - INFO - add_expense called | Date=2026-01-27, Category=Others, SubCategory=dhamki , Type=Income, Amount=500.0
+2026-01-27 10:21:41,565 - db_helper - DEBUG - Opening database connection
+2026-01-27 10:21:41,689 - db_helper - INFO - Expense added successfully
+2026-01-27 10:21:57,416 - db_helper - INFO - show_all_expenses called
+2026-01-27 10:21:57,417 - db_helper - DEBUG - Opening database connection
+2026-01-27 10:21:57,443 - db_helper - INFO - show_all_expenses success | Records fetched: 246
+2026-01-27 10:22:34,343 - db_helper - INFO - show_all_expenses called
+2026-01-27 10:22:34,344 - db_helper - DEBUG - Opening database connection
+2026-01-27 10:22:34,363 - db_helper - INFO - show_all_expenses success | Records fetched: 246
+2026-01-27 10:23:11,262 - db_helper - INFO - show_all_expenses called
+2026-01-27 10:23:11,262 - db_helper - DEBUG - Opening database connection
+2026-01-27 10:23:11,286 - db_helper - INFO - show_all_expenses success | Records fetched: 246
+2026-01-27 10:24:58,310 - db_helper - INFO - show_all_expenses called
+2026-01-27 10:24:58,310 - db_helper - DEBUG - Opening database connection
+2026-01-27 10:24:58,329 - db_helper - INFO - show_all_expenses success | Records fetched: 246
+2026-01-27 10:25:09,541 - db_helper - INFO - search_by_id called
+2026-01-27 10:25:09,543 - db_helper - DEBUG - Opening database connection
+2026-01-27 10:25:09,554 - db_helper - INFO - search_by_id success | Record found
+2026-01-27 10:25:16,420 - db_helper - INFO - update_expense called | id=252
+2026-01-27 10:25:16,420 - db_helper - DEBUG - Opening database connection
+2026-01-27 10:25:16,440 - db_helper - INFO - update_expense success | id=252 updated
+2026-01-27 10:25:18,776 - db_helper - INFO - show_all_expenses called
+2026-01-27 10:25:18,776 - db_helper - DEBUG - Opening database connection
+2026-01-27 10:25:18,803 - db_helper - INFO - show_all_expenses success | Records fetched: 246
+2026-01-27 10:25:33,844 - db_helper - INFO - search_by_id called
+2026-01-27 10:25:33,845 - db_helper - DEBUG - Opening database connection
+2026-01-27 10:25:33,854 - db_helper - INFO - search_by_id success | Record found
+2026-01-27 10:25:33,855 - db_helper - INFO - delete_expense called | id=252
+2026-01-27 10:25:33,855 - db_helper - DEBUG - Opening database connection
+2026-01-27 10:25:33,864 - db_helper - INFO - delete_expense success | id=252 deleted
+2026-01-27 10:25:36,164 - db_helper - INFO - show_all_expenses called
+2026-01-27 10:25:36,164 - db_helper - DEBUG - Opening database connection
+2026-01-27 10:25:36,176 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-27 10:25:45,633 - db_helper - INFO - search_by_id called
+2026-01-27 10:25:45,633 - db_helper - DEBUG - Opening database connection
+2026-01-27 10:25:45,642 - db_helper - INFO - search_by_id success | Record found
+2026-01-27 10:25:59,955 - db_helper - INFO - search_by_category called | category=Food
+2026-01-27 10:25:59,955 - db_helper - DEBUG - Opening database connection
+2026-01-27 10:25:59,964 - db_helper - INFO - search_by_category success | Records found: 127
+2026-01-27 10:26:02,560 - db_helper - INFO - search_by_category called | category=Travel
+2026-01-27 10:26:02,560 - db_helper - DEBUG - Opening database connection
+2026-01-27 10:26:02,571 - db_helper - INFO - search_by_category success | Records found: 0
+2026-01-27 10:26:17,529 - db_helper - INFO - search_by_sub_category called | sub_category=papa
+2026-01-27 10:26:17,529 - db_helper - DEBUG - Opening database connection
+2026-01-27 10:26:17,540 - db_helper - INFO - search_by_sub_category success | Records found: 14
+2026-01-27 10:26:39,478 - db_helper - INFO - search_by_transaction_type called | transaction_type=Expense
+2026-01-27 10:26:39,479 - db_helper - DEBUG - Opening database connection
+2026-01-27 10:26:39,491 - db_helper - INFO - search_by_transaction_type success | Records found: 182
+2026-01-27 10:26:48,854 - db_helper - INFO - search_by_transaction_type called | transaction_type=Income
+2026-01-27 10:26:48,855 - db_helper - DEBUG - Opening database connection
+2026-01-27 10:26:48,865 - db_helper - INFO - search_by_transaction_type success | Records found: 43
+2026-01-27 10:27:42,880 - db_helper - INFO - search_by_date_range called | start_date=2021-01-01, end_date=2021-02-03
+2026-01-27 10:27:42,880 - db_helper - DEBUG - Opening database connection
+2026-01-27 10:27:42,892 - db_helper - INFO - filter_by_date_range success | Records found: 43
+2026-01-27 10:27:52,560 - db_helper - INFO - search_by_date_range called | start_date=2021-01-01, end_date=2021-02-03
+2026-01-27 10:27:52,560 - db_helper - DEBUG - Opening database connection
+2026-01-27 10:27:52,569 - db_helper - INFO - filter_by_date_range success | Records found: 43
+2026-01-27 10:28:27,381 - db_helper - INFO - search_by_date_range called | start_date=2023-01-01, end_date=2026-01-27
+2026-01-27 10:28:27,381 - db_helper - DEBUG - Opening database connection
+2026-01-27 10:28:27,393 - db_helper - INFO - filter_by_date_range success | Records found: 20
+2026-01-27 10:28:38,087 - db_helper - INFO - search_by_date_range called | start_date=2021-01-01, end_date=2026-01-27
+2026-01-27 10:28:38,088 - db_helper - DEBUG - Opening database connection
+2026-01-27 10:28:38,096 - db_helper - INFO - filter_by_date_range success | Records found: 245
+2026-01-27 10:30:02,414 - db_helper - INFO - search_by_date_range called | start_date=2021-01-01, end_date=2026-01-27
+2026-01-27 10:30:02,415 - db_helper - DEBUG - Opening database connection
+2026-01-27 10:30:02,431 - db_helper - INFO - filter_by_date_range success | Records found: 245
+2026-01-27 13:57:13,920 - db_helper - INFO - show_all_expenses called
+2026-01-27 13:57:13,922 - db_helper - DEBUG - Opening database connection
+2026-01-27 13:57:14,301 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-27 13:58:18,719 - db_helper - INFO - add_expense called | Date=2026-01-27, Category=Shopping, SubCategory=shirt, Type=Expense, Amount=1500.0
+2026-01-27 13:58:18,720 - db_helper - DEBUG - Opening database connection
+2026-01-27 13:58:18,744 - db_helper - INFO - Expense added successfully
+2026-01-27 13:58:25,886 - db_helper - INFO - show_all_expenses called
+2026-01-27 13:58:25,886 - db_helper - DEBUG - Opening database connection
+2026-01-27 13:58:25,896 - db_helper - INFO - show_all_expenses success | Records fetched: 246
+2026-01-27 13:59:16,288 - db_helper - INFO - search_by_id called
+2026-01-27 13:59:16,288 - db_helper - DEBUG - Opening database connection
+2026-01-27 13:59:16,297 - db_helper - INFO - search_by_id success | Record found
+2026-01-27 13:59:26,916 - db_helper - INFO - update_expense called | id=253
+2026-01-27 13:59:26,917 - db_helper - DEBUG - Opening database connection
+2026-01-27 13:59:26,928 - db_helper - INFO - update_expense success | id=253 updated
+2026-01-27 13:59:29,139 - db_helper - INFO - show_all_expenses called
+2026-01-27 13:59:29,140 - db_helper - DEBUG - Opening database connection
+2026-01-27 13:59:29,152 - db_helper - INFO - show_all_expenses success | Records fetched: 246
+2026-01-27 13:59:45,448 - db_helper - INFO - search_by_id called
+2026-01-27 13:59:45,449 - db_helper - DEBUG - Opening database connection
+2026-01-27 13:59:45,458 - db_helper - INFO - search_by_id success | Record found
+2026-01-27 13:59:45,459 - db_helper - INFO - delete_expense called | id=253
+2026-01-27 13:59:45,459 - db_helper - DEBUG - Opening database connection
+2026-01-27 13:59:45,469 - db_helper - INFO - delete_expense success | id=253 deleted
+2026-01-27 14:00:07,126 - db_helper - INFO - show_all_expenses called
+2026-01-27 14:00:07,126 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:00:07,141 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-27 14:00:20,096 - db_helper - INFO - show_all_expenses called
+2026-01-27 14:00:20,097 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:00:20,117 - db_helper - INFO - show_all_expenses success | Records fetched: 245
+2026-01-27 14:01:01,820 - db_helper - INFO - search_by_id called
+2026-01-27 14:01:01,821 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:01:01,831 - db_helper - INFO - search_by_id success | Record found
+2026-01-27 14:01:58,926 - db_helper - INFO - search_by_category called | category=Salary
+2026-01-27 14:01:58,926 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:01:58,937 - db_helper - INFO - search_by_category success | Records found: 12
+2026-01-27 14:02:24,126 - db_helper - INFO - search_by_sub_category called | sub_category=papa
+2026-01-27 14:02:24,128 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:02:24,135 - db_helper - INFO - search_by_sub_category success | Records found: 14
+2026-01-27 14:02:38,806 - db_helper - INFO - search_by_transaction_type called | transaction_type=Expense
+2026-01-27 14:02:38,809 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:02:38,825 - db_helper - INFO - search_by_transaction_type success | Records found: 182
+2026-01-27 14:02:47,520 - db_helper - INFO - search_by_transaction_type called | transaction_type=Income
+2026-01-27 14:02:47,520 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:02:47,529 - db_helper - INFO - search_by_transaction_type success | Records found: 43
+2026-01-27 14:03:32,213 - db_helper - INFO - search_by_date_range called | start_date=2021-01-01, end_date=2021-02-04
+2026-01-27 14:03:32,213 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:03:32,229 - db_helper - INFO - filter_by_date_range success | Records found: 43
+2026-01-27 14:03:43,051 - db_helper - INFO - search_by_date_range called | start_date=2021-01-01, end_date=2021-02-04
+2026-01-27 14:03:43,052 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:03:43,060 - db_helper - INFO - filter_by_date_range success | Records found: 43
+2026-01-27 14:04:13,559 - db_helper - INFO - search_by_date_range called | start_date=2021-01-01, end_date=2021-03-15
+2026-01-27 14:04:13,560 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:04:13,570 - db_helper - INFO - filter_by_date_range success | Records found: 74
+2026-01-27 14:05:21,718 - db_helper - INFO - search_by_amount_range called | min_amount=50.0, max_amount=1200.0
+2026-01-27 14:05:21,719 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:05:21,737 - db_helper - INFO - filter_by_amount_range success | Records found: 4
+2026-01-27 14:05:29,100 - db_helper - INFO - search_by_amount_range called | min_amount=50.0, max_amount=1600.0
+2026-01-27 14:05:29,100 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:05:29,115 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:05:41,293 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=20000.0
+2026-01-27 14:05:41,293 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:05:41,302 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:05:46,049 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=20000.0
+2026-01-27 14:05:46,050 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:05:46,058 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:06:15,513 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=200.0
+2026-01-27 14:06:15,513 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:06:15,527 - db_helper - INFO - filter_by_amount_range success | Records found: 0
+2026-01-27 14:07:13,778 - db_helper - INFO - search_by_amount_range called | min_amount=60.0, max_amount=200.0
+2026-01-27 14:07:13,778 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:07:13,785 - db_helper - INFO - filter_by_amount_range success | Records found: 0
+2026-01-27 14:08:47,608 - db_helper - INFO - search_by_amount_range called | min_amount=60.0, max_amount=60000.0
+2026-01-27 14:08:47,609 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:08:47,617 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:11:58,746 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=1200.0
+2026-01-27 14:11:58,747 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:11:58,755 - db_helper - INFO - filter_by_amount_range success | Records found: 4
+2026-01-27 14:12:00,600 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=1200.0
+2026-01-27 14:12:00,600 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:12:00,610 - db_helper - INFO - filter_by_amount_range success | Records found: 4
+2026-01-27 14:12:02,132 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=1200.0
+2026-01-27 14:12:02,132 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:12:02,140 - db_helper - INFO - filter_by_amount_range success | Records found: 4
+2026-01-27 14:12:43,480 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=55000.0
+2026-01-27 14:12:43,480 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:12:43,489 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:13:20,161 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=55000.0
+2026-01-27 14:13:20,161 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:13:20,171 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:15:29,094 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=100000.0
+2026-01-27 14:15:29,094 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:15:29,108 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:15:32,291 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=100000.0
+2026-01-27 14:15:32,291 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:15:32,300 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:15:35,049 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=100000.0
+2026-01-27 14:15:35,050 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:15:35,058 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:15:46,751 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=100000.0
+2026-01-27 14:15:46,751 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:15:46,761 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:15:52,566 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=60000.0
+2026-01-27 14:15:52,566 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:15:52,573 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:24:45,525 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=60000.0
+2026-01-27 14:24:45,525 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:24:45,533 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:25:01,979 - db_helper - INFO - search_by_date_range called | start_date=2023-01-01, end_date=2026-01-27
+2026-01-27 14:25:01,980 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:25:01,988 - db_helper - INFO - filter_by_date_range success | Records found: 20
+2026-01-27 14:25:09,091 - db_helper - INFO - search_by_date_range called | start_date=2021-01-01, end_date=2026-01-27
+2026-01-27 14:25:09,091 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:25:09,102 - db_helper - INFO - filter_by_date_range success | Records found: 245
+2026-01-27 14:25:20,219 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=100000.0
+2026-01-27 14:25:20,220 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:25:20,229 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:25:42,573 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=70000.0
+2026-01-27 14:25:42,573 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:25:42,582 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:26:57,051 - db_helper - INFO - search_by_date_range called | start_date=2021-01-01, end_date=2026-01-27
+2026-01-27 14:26:57,051 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:26:57,067 - db_helper - INFO - filter_by_date_range success | Records found: 245
+2026-01-27 14:27:02,548 - db_helper - INFO - search_by_date_range called | start_date=2021-01-01, end_date=2026-01-27
+2026-01-27 14:27:02,548 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:27:02,558 - db_helper - INFO - filter_by_date_range success | Records found: 245
+2026-01-27 14:30:50,532 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=70000.0
+2026-01-27 14:30:50,532 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:30:50,542 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:30:52,650 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=70000.0
+2026-01-27 14:30:52,651 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:30:52,660 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:30:56,926 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=70000.0
+2026-01-27 14:30:56,927 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:30:56,934 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:31:37,909 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=100000.0
+2026-01-27 14:31:37,909 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:31:37,923 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:31:39,773 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=100000.0
+2026-01-27 14:31:39,774 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:31:39,781 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:31:48,603 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=60000.0
+2026-01-27 14:31:48,604 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:31:48,611 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:31:50,910 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=60000.0
+2026-01-27 14:31:50,910 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:31:50,918 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:31:53,163 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=60000.0
+2026-01-27 14:31:53,164 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:31:53,171 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:32:34,046 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=60000.0
+2026-01-27 14:32:34,052 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:32:34,072 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:33:22,981 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=60000.0
+2026-01-27 14:33:22,981 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:33:22,992 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:33:32,067 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=60000.0
+2026-01-27 14:33:32,067 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:33:32,076 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:33:34,427 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=60000.0
+2026-01-27 14:33:34,427 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:33:34,438 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:33:52,071 - db_helper - INFO - add_expense called | Date=2026-01-27, Category=Salary, SubCategory=, Type=Income, Amount=1500.0
+2026-01-27 14:33:52,072 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:33:52,081 - db_helper - INFO - Expense added successfully
+2026-01-27 14:33:55,341 - db_helper - INFO - show_all_expenses called
+2026-01-27 14:33:55,341 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:33:55,350 - db_helper - INFO - show_all_expenses success | Records fetched: 246
+2026-01-27 14:34:05,775 - db_helper - INFO - search_by_id called
+2026-01-27 14:34:05,775 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:34:05,784 - db_helper - INFO - search_by_id success | Record found
+2026-01-27 14:34:05,785 - db_helper - INFO - delete_expense called | id=254
+2026-01-27 14:34:05,785 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:34:05,794 - db_helper - INFO - delete_expense success | id=254 deleted
+2026-01-27 14:35:42,083 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=100000.0
+2026-01-27 14:35:42,083 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:35:42,094 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:35:43,620 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=100000.0
+2026-01-27 14:35:43,621 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:35:43,628 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:35:45,194 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=100000.0
+2026-01-27 14:35:45,194 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:35:45,203 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:40:38,871 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=100000.0
+2026-01-27 14:40:38,871 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:40:38,884 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:40:41,197 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=100000.0
+2026-01-27 14:40:41,197 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:40:41,207 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:40:43,971 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=100000.0
+2026-01-27 14:40:43,971 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:40:43,979 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:41:31,883 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=100000.0
+2026-01-27 14:41:31,884 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:41:31,892 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:41:36,197 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=100000.0
+2026-01-27 14:41:36,197 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:41:36,206 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:41:37,870 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=100000.0
+2026-01-27 14:41:37,870 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:41:37,878 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:41:47,735 - db_helper - INFO - search_by_date_range called | start_date=2021-01-01, end_date=2026-01-27
+2026-01-27 14:41:47,735 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:41:47,744 - db_helper - INFO - filter_by_date_range success | Records found: 245
+2026-01-27 14:44:06,492 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=100000.0
+2026-01-27 14:44:06,492 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:44:06,501 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:44:20,691 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=8000.0
+2026-01-27 14:44:20,691 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:44:20,701 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:46:40,813 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=8000.0
+2026-01-27 14:46:40,814 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:46:40,824 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:46:42,983 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=8000.0
+2026-01-27 14:46:42,984 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:46:42,994 - db_helper - INFO - filter_by_amount_range success | Records found: 20
+2026-01-27 14:53:01,694 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=100000.0
+2026-01-27 14:53:01,694 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:53:01,710 - db_helper - INFO - filter_by_amount_range success | Records found: 0
+2026-01-27 14:53:03,752 - db_helper - INFO - search_by_amount_range called | min_amount=0.0, max_amount=100000.0
+2026-01-27 14:53:03,754 - db_helper - DEBUG - Opening database connection
+2026-01-27 14:53:03,764 - db_helper - INFO - filter_by_amount_range success | Records found: 0
+2026-01-27 17:50:10,578 - db_helper - ERROR - Database error: 1054 (42S22): Unknown column 'debit_or_credit' in 'where clause'
+2026-01-27 17:50:15,077 - db_helper - ERROR - Database error: 1054 (42S22): Unknown column 'debit_or_credit' in 'where clause'
+2026-01-27 17:50:17,958 - db_helper - ERROR - Database error: 1054 (42S22): Unknown column 'debit_or_credit' in 'where clause'
+2026-01-27 17:50:38,418 - db_helper - ERROR - Database error: 1054 (42S22): Unknown column 'debit_or_credit' in 'where clause'
+2026-01-27 17:50:40,903 - db_helper - ERROR - Database error: 1054 (42S22): Unknown column 'debit_or_credit' in 'where clause'
+2026-01-27 17:50:42,758 - db_helper - ERROR - Database error: 1054 (42S22): Unknown column 'debit_or_credit' in 'where clause'
+2026-01-27 17:51:18,762 - db_helper - ERROR - Database error: 1054 (42S22): Unknown column 'debit_or_credit' in 'where clause'
+2026-01-27 17:51:19,102 - db_helper - ERROR - Database error: 1054 (42S22): Unknown column 'debit_or_credit' in 'where clause'
+2026-01-27 17:51:19,288 - db_helper - ERROR - Database error: 1054 (42S22): Unknown column 'debit_or_credit' in 'where clause'
+2026-01-27 17:51:19,798 - db_helper - ERROR - Database error: 1054 (42S22): Unknown column 'debit_or_credit' in 'where clause'
+2026-01-27 17:51:52,316 - db_helper - ERROR - Database error: 1054 (42S22): Unknown column 'debit_or_credit' in 'where clause'
+2026-01-27 17:51:53,982 - db_helper - ERROR - Database error: 1054 (42S22): Unknown column 'debit_or_credit' in 'where clause'
+2026-01-27 17:52:14,916 - db_helper - ERROR - Database error: 1054 (42S22): Unknown column 'debit_or_credit' in 'where clause'
+2026-01-27 17:52:17,242 - db_helper - ERROR - Database error: 1054 (42S22): Unknown column 'debit_or_credit' in 'where clause'
+2026-01-27 17:52:19,337 - db_helper - ERROR - Database error: 1054 (42S22): Unknown column 'debit_or_credit' in 'where clause'
+2026-01-27 17:53:08,191 - db_helper - ERROR - Database error: 1054 (42S22): Unknown column 'debit_or_credit' in 'where clause'
+2026-01-27 18:56:22,001 - db_helper - INFO - Adding: 2026-01-27, Food, daddy, Expense, 1500.0
+2026-01-27 18:56:22,034 - db_helper - INFO - Expense added successfully
