@@ -2,7 +2,9 @@ import os
 import sys
 
 if __name__ == "__main__":
-    current_folder = os.path.dirname(__file__)
-    print(f"Project root: {current_folder}")
-    sys.path.insert(0,current_folder)
+
+    root_folder = os.path.dirname(os.path.dirname(__file__))
+
+    print(f"Project root: {root_folder}")
+    sys.path.insert(0, root_folder)
     print(sys.path)

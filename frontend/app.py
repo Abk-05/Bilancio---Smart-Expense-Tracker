@@ -7,17 +7,13 @@ from reportlab.lib.pagesizes import letter
 from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet
 from datetime import date
+from backend import db_helper
 import sys
 import os
 
 # --- 1. Path Setup ---
 current_dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.join(current_dir, '..'))
-
-try:
-    import db_helper
-except ImportError:
-    from backend import db_helper
 
 # --- 2. Page Config ---
 st.set_page_config(
@@ -26,55 +22,9 @@ st.set_page_config(
     page_icon="💰"
 )
 
-# ==========================================
-# 🎨 CUSTOM CSS
-# ==========================================
-st.markdown("""
-    <style>
-    html, body, [class*="css"] {
-        font-size: 18px;
-    }
-    [data-testid="stSidebar"] * {
-        font-size: 20px !important;
-    }
-    .stTextInput label, .stNumberInput label, .stSelectbox label, .stDateInput label, .stRadio label {
-        font-size: 18px !important;
-        font-weight: bold;
-    }
-    .stButton button {
-        font-size: 20px !important;
-        font-weight: bold;
-        padding: 10px;
-    }
-    .credit-text {
-        text-align: center;
-        font-weight: bold;
-        margin-top: 5px; 
-        font-size: 16px !important;
-        opacity: 0.9;
-        padding-bottom: 10px;
-    }
-    </style>
-    """, unsafe_allow_html=True)
-
 # --- 3. Sidebar Styling ---
 with st.sidebar:
-    logo_path = os.path.join(current_dir, "logo.jpg")
-
-    if os.path.exists(logo_path):
-        st.image(logo_path, use_container_width=True)
-    else:
-        alt_path_1 = os.path.join(current_dir, "logo.jpg.png")
-        alt_path_2 = os.path.join(current_dir, "image (2).jpg")
-        if os.path.exists(alt_path_1):
-            st.image(alt_path_1, use_container_width=True)
-        elif os.path.exists(alt_path_2):
-            st.image(alt_path_2, use_container_width=True)
-        else:
-            st.markdown("## 💰 **Bilancio**")
-            st.caption("Smart Finance Tracker")
-
-    st.markdown("---")
+    st.image(os.path.join(current_dir, "logo.png"), use_container_width=True)
 
     menu = st.radio(
         "📂 **Navigation**",
@@ -92,7 +42,7 @@ with st.sidebar:
         ]
     )
 
-    st.markdown('<p class="credit-text">Developed with ❤️ by Ankit</p>', unsafe_allow_html=True)
+    st.markdown("Developed with ❤️ by Ankit")
 
 
 # --- 4. UNIVERSAL DOWNLOAD FUNCTION ---
@@ -126,7 +76,6 @@ def show_data_with_downloads(df, key_prefix=""):
     elements.append(Paragraph(f"Generated on: {date.today()}", styles['Normal']))
     elements.append(Paragraph(" ", styles['Normal']))
 
-    # UPDATE: Changed 'debit_or_credit' to 'amount'
     standard_cols = ['id', 'expense_date', 'category', 'sub_category', 'transaction_type', 'amount']
     cols_to_print = [c for c in df.columns if c in standard_cols]
 
@@ -153,22 +102,18 @@ def show_data_with_downloads(df, key_prefix=""):
         mime="application/pdf",
         key=f"pdf_{key_prefix}"
     )
-
-
 # --- CHART GENERATOR HELPER ---
 def generate_charts(df):
     st.markdown("---")
 
     df['type_calc'] = df['transaction_type'].astype(str).str.strip().str.lower()
 
-    # UPDATE: Changed 'debit_or_credit' to 'amount'
-    total_expense = df[df['type_calc'] == 'expense']['amount'].sum()
-    total_income = df[df['type_calc'] == 'income']['amount'].sum()
+    total_expense = df.query("type_calc == 'expense'")['amount'].sum()
+    total_income = df.query("type_calc == 'income'")['amount'].sum()
 
     m1, m2 = st.columns(2)
-
-    has_income = not df[df['type_calc'] == 'income'].empty
-    has_expense = not df[df['type_calc'] == 'expense'].empty
+    has_income = not df.query("type_calc == 'income'").empty
+    has_expense = not df.query("type_calc == 'expense'").empty
 
     if has_income:
         m1.metric("Total Income", f"₹ {total_income:,.2f}")
@@ -181,10 +126,10 @@ def generate_charts(df):
         m2.metric("Total Expense", "₹ 0.00")
 
     c1, c2 = st.columns(2)
+
     with c1:
         st.subheader("Category Share")
         if not df.empty:
-            # UPDATE: Changed 'debit_or_credit' to 'amount'
             fig_pie = px.pie(df, names='category', values='amount', hole=0.5,
                              color_discrete_sequence=px.colors.qualitative.Prism)
             fig_pie.update_traces(textposition='inside', textinfo='percent+label')
@@ -195,7 +140,6 @@ def generate_charts(df):
     with c2:
         st.subheader("Transaction Trend")
         if not df.empty:
-            # UPDATE: Changed 'debit_or_credit' to 'amount'
             daily = df.groupby('expense_date')['amount'].sum().reset_index()
             fig_bar = px.bar(daily, x='expense_date', y='amount', color='amount',
                              color_continuous_scale='Plasma')
@@ -203,20 +147,32 @@ def generate_charts(df):
         else:
             st.info("No data for charts.")
 
-
 # ================= MAIN APP HEADER =================
 if menu == "➕ Add Transaction":
     st.title("➕ Bilancio: Add Transaction")
+
 elif menu == "✏️ Update Transaction":
     st.title("✏️ Bilancio: Update Transaction")
+
 elif menu == "🗑️ Delete Transaction":
     st.title("🗑️ Bilancio: Delete Transaction")
+
 elif menu == "📋 View All Transactions":
     st.title("📋 Bilancio: All Transactions")
+
 elif "Search" in menu:
-    st.title(f"{menu.split(' by ')[-1]} Search")
+    if "Date" in menu:
+        st.title("📅 Search by Date")
+    elif "Category" in menu:
+        st.title("📂 Search by Category")
+    elif "Month" in menu:
+        st.title("📆 Search by Month")
+    else:
+        st.title("🔍 Search Transaction")
+
 elif "Filter" in menu:
     st.title("🛠️ Bilancio Custom Filter")
+
 elif "Dashboard" in menu:
     st.title("📊 Bilancio Analytics Dashboard")
 
@@ -242,22 +198,34 @@ if menu == "➕ Add Transaction":
         st.session_state['add_cat'] = None
         st.session_state['add_sub'] = ""
         st.session_state['add_amt'] = 0.0
-        st.session_state['add_type'] = "Expense"
+        st.session_state['add_type'] = None
 
 
     with st.container(border=True):
         c1, c2 = st.columns(2)
+
+        # Left Side
         c1.date_input("📅 Date", date.today(), key='add_date')
+
         c1.selectbox("📂 Category",
                      ["Food", "Travel", "Bills", "Shopping", "Entertainment", "Salary", "Business", "Others"],
                      index=None, placeholder="Select...", key='add_cat')
-        c1.text_input("📝 Sub Category", key='add_sub')
-        c2.selectbox("💳 Type", ["Expense", "Income"], key='add_type')
-        c2.number_input("💰 Amount", min_value=0.0, step=10.0, max_value=1000000000.0, key='add_amt')
-        st.button("✅ Save Transaction", on_click=cb_add_expense, use_container_width=True)
 
+        c1.text_input("📝 Sub Category",placeholder="Type here...", key='add_sub')
+
+        # Right Side (Updated Type Selectbox)
+        c2.selectbox("💳 Type",
+                     ["Expense", "Income"],
+                     index=None,
+                     placeholder="Select...",
+                     key='add_type')
+
+        c2.number_input("💰 Amount", min_value=0.0, step=1.0, max_value=1000000000.0, key='add_amt')
+
+        st.button("✅ Save Transaction", on_click=cb_add_expense, use_container_width=True)
 # ================= 2. UPDATE TRANSACTION =================
 elif menu == "✏️ Update Transaction":
+
     def cb_update_expense():
         uid = st.session_state.get('upd_search_id')
         ud = st.session_state.get('u_date')
@@ -270,14 +238,24 @@ elif menu == "✏️ Update Transaction":
         st.toast(f"✅ Transaction {uid} Updated!", icon="🔄")
 
         st.session_state['update_found_data'] = None
-        st.session_state['upd_search_id'] = 0
+        st.session_state['upd_search_id'] = None
 
 
     st.markdown("Enter ID to edit details.")
-    search_id = st.number_input("Enter Transaction ID", min_value=0, step=1, key='upd_search_id')
 
+    # --- 2. SEARCH BOX (Enter Expense ID वाला फिक्स) ---
+    search_id = st.number_input(
+        "Enter Transaction ID",
+        min_value=0,
+        step=1,
+        value=None,  # <-- 0 नहीं दिखेगा
+        placeholder="Enter Expense ID",  # <-- टेक्स्ट दिखेगा
+        key='upd_search_id'
+    )
+
+    # --- 3. FETCH BUTTON LOGIC ---
     if st.button("🔍 Fetch Details"):
-        if search_id > 0:
+        if search_id:  # चेक करना कि ID खाली तो नहीं है
             record = db_helper.search_by_id(search_id)
             if record:
                 st.session_state['update_found_data'] = record
@@ -285,44 +263,59 @@ elif menu == "✏️ Update Transaction":
             else:
                 st.error("ID Not Found.")
                 st.session_state['update_found_data'] = None
+        else:
+            st.warning("⚠️ Please enter an ID first.")
 
+    # --- 4. UPDATE FORM (पुराना डिटेल वाला) ---
     if st.session_state.get('update_found_data'):
         data = st.session_state['update_found_data']
+
         with st.container(border=True):
             st.markdown(f"**Editing Transaction ID: {data['id']}**")
             c1, c2 = st.columns(2)
+
+            # Date Input
             c1.date_input("📅 Date", data['expense_date'], key='u_date')
+
+            # Category Selectbox Logic
             opts_cat = ["Food", "Travel", "Bills", "Shopping", "Entertainment", "Salary", "Business", "Others"]
+            # पुराना इंडेक्स ढूँढना
             idx_cat = opts_cat.index(data['category']) if data['category'] in opts_cat else 0
             c1.selectbox("📂 Category", opts_cat, index=idx_cat, key='u_cat')
+
+            # Sub Category Input
             c1.text_input("📝 Sub Category", value=data['sub_category'], key='u_sub')
+
+            # Type Selectbox Logic
             opts_type = ["Expense", "Income"]
             idx_type = opts_type.index(data['transaction_type']) if data['transaction_type'] in opts_type else 0
             c2.selectbox("💳 Type", opts_type, index=idx_type, key='u_type')
 
-            # UPDATE: Changed 'debit_or_credit' to 'amount'
-            c2.number_input("💰 Amount", value=float(data['amount']), min_value=0.0, max_value=1000000000.0, key='u_amt')
-            st.markdown("---")
-            st.button("✅ Confirm Update", on_click=cb_update_expense, use_container_width=True)
+            # Amount Input
+            c2.number_input("💰 Amount", value=float(data['amount']), min_value=0.0, step=10.0, key='u_amt')
 
+            st.markdown("---")
+            # Update Button
+            st.button("✅ Confirm Update", on_click=cb_update_expense, use_container_width=True)
 # ================= 3. DELETE TRANSACTION =================
 elif menu == "🗑️ Delete Transaction":
     def cb_delete_expense():
         did = st.session_state.get('del_id_input')
-        if did > 0:
+        if did:
             rec = db_helper.search_by_id(did)
             if rec:
                 db_helper.delete_expense(did)
                 st.toast(f"✅ Transaction {did} Deleted!", icon="🗑️")
-                st.session_state['del_id_input'] = 0
+                st.session_state['del_id_input'] = None
             else:
                 st.error("ID Not Found!")
         else:
-            st.error("Invalid ID")
+            st.error("Please enter an ID first.")
+
 
 
     st.markdown("⚠️ **Warning:** This action cannot be undone.")
-    st.number_input("Enter Transaction ID to Delete", min_value=0, step=1, key='del_id_input')
+    st.number_input("Enter Transaction ID to Delete", min_value=0,value = None, placeholder ="Enter ID to delete",step=1, key='del_id_input')
     st.button("🗑️ Delete Permanently", on_click=cb_delete_expense, type="primary")
 
 # ================= 4. VIEW ALL =================
@@ -332,7 +325,7 @@ elif menu == "📋 View All Transactions":
 
 # ================= 6. SEARCH OPTIONS =================
 elif menu == "🔍 Search by ID":
-    sid = st.number_input("Enter Transaction ID", min_value=1, step=1)
+    sid = st.number_input("Enter Transaction ID", min_value=1,value =None,placeholder ='Enter Id To Search', step=1)
     if st.button("Search"):
         data = db_helper.search_by_id(sid)
         if data:
@@ -364,19 +357,15 @@ elif menu == "📝 Search by Sub Category":
 
 elif menu == "💳 Search by Transaction Type":
     tt = st.radio("Type", ["Expense", "Income"], horizontal=True)
+
     if st.button("Search"):
+
         data = db_helper.search_by_transaction_type(tt)
-        if not data:
-            all_data = db_helper.show_all_expenses()
-            df = pd.DataFrame(all_data)
-            if not df.empty:
-                df['type_clean'] = df['transaction_type'].astype(str).str.strip().str.lower()
-                df = df[df['type_clean'] == tt.lower()]
-                show_data_with_downloads(df, "type_fallback")
-            else:
-                st.error("Not Found")
-        else:
+
+        if data:
             show_data_with_downloads(pd.DataFrame(data), "type")
+        else:
+            st.error(f"No records found for '{tt}'.")
 
 # ================= 9. CUSTOM FILTER (UNIVERSAL FIX) =================
 elif menu == "🛠️ Custom Data Filter":
@@ -386,7 +375,7 @@ elif menu == "🛠️ Custom Data Filter":
 
     with tab_date:
         c1, c2 = st.columns(2)
-        start_d = c1.date_input("Start Date", date(2023, 1, 1))
+        start_d = c1.date_input("Start Date", date(2021, 1, 1))
         end_d = c2.date_input("End Date", date.today())
 
         st.markdown("**Select Transaction Type:**")
@@ -519,7 +508,6 @@ elif menu == "📊 Dashboard & Charts":
             raw = db_helper.filter_by_date_range(cd_start, cd_end)
             df = pd.DataFrame(raw)
             if not df.empty:
-                # UPDATE: Changed 'debit_or_credit' to 'amount'
                 df['amount'] = pd.to_numeric(df['amount'])
                 df = df[(df['amount'] >= ca_min) & (df['amount'] <= ca_max)]
 

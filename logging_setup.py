@@ -1,31 +1,33 @@
 import logging
 import os
 
-def setup_logger(name):
+def setup_logger(name, log_file='expense_app.log'):
+
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    log_dir = os.path.join(base_dir, "logs")
+
+
+    if not os.path.exists(log_dir):
+        os.makedirs(log_dir)
+
+    log_path = os.path.join(log_dir, log_file)
+
     logger = logging.getLogger(name)
-    logger.setLevel(logging.DEBUG)
+    logger.setLevel(logging.INFO)
 
-    if not logger.handlers:
-        # 📁 Absolute path fix
-        base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        log_dir = os.path.join(base_dir, "logs")
-        os.makedirs(log_dir, exist_ok=True)
 
-        log_file = os.path.join(log_dir, "expense_app.log")
+    if logger.hasHandlers():
+        logger.handlers.clear()
 
-        formatter = logging.Formatter(
-            "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-        )
 
-        file_handler = logging.FileHandler(log_file, encoding="utf-8")
-        file_handler.setFormatter(formatter)
+    file_handler = logging.FileHandler(log_path)
+    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    file_handler.setFormatter(formatter)
+    logger.addHandler(file_handler)
 
-        console_handler = logging.StreamHandler()
-        console_handler.setFormatter(formatter)
 
-        logger.addHandler(file_handler)
-        logger.addHandler(console_handler)
-
-        logger.propagate = False  # 🔥 Prevent duplicate logs
+    stream_handler = logging.StreamHandler()
+    stream_handler.setFormatter(formatter)
+    logger.addHandler(stream_handler)
 
     return logger
