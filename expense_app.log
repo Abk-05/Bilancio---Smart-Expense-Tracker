@@ -1,2 +1,0 @@
-2026-01-25 14:20:36,540 - expense_db - INFO - show_all_expenses called
-2026-01-25 14:20:36,928 - expense_db - INFO - show_all_expenses success | Records fetched: 245
