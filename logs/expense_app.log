@@ -235,3 +235,7 @@
 2026-02-03 12:18:59,798 - db_helper - INFO - Found 43 records for type 'Income'
 2026-02-03 12:19:00,894 - db_helper - INFO - Searching by Transaction Type: Expense
 2026-02-03 12:19:00,904 - db_helper - INFO - Found 200 records for type 'Expense'
+2026-02-04 09:54:33,742 - db_helper - INFO - Fetching all expenses...
+2026-02-04 09:54:34,248 - db_helper - INFO - Total expenses fetched: 249
+2026-02-04 09:55:58,292 - db_helper - INFO - Filtering by Date Range: 2023-01-01 to 2026-02-04
+2026-02-04 09:55:58,307 - db_helper - INFO - Found 24 records in date range
