@@ -83,11 +83,7 @@ cd Bilancio---Smart-Expense-Tracker
 
 ## Setup Instructions
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/yourusername/expense-management-system.git
-   cd expense-management-system
-   ```
+2.  **MySQL Server** (The database software) -> [Download Here](https://dev.mysql.com/downloads/installer/)
 1. **Install dependencies:**:   
    ```commandline
     pip install -r requirements.txt
@@ -99,3 +95,4 @@ cd Bilancio---Smart-Expense-Tracker
 1. **Run the Streamlit app:**:   
    ```commandline
     python -m streamlit run frontend/app.py
+

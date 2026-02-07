@@ -239,3 +239,11 @@
 2026-02-04 09:54:34,248 - db_helper - INFO - Total expenses fetched: 249
 2026-02-04 09:55:58,292 - db_helper - INFO - Filtering by Date Range: 2023-01-01 to 2026-02-04
 2026-02-04 09:55:58,307 - db_helper - INFO - Found 24 records in date range
+2026-02-05 12:02:56,306 - db_helper - INFO - Filtering by Date Range: 2023-01-01 to 2026-02-05
+2026-02-05 12:02:56,549 - db_helper - INFO - Found 24 records in date range
+2026-02-05 12:03:02,444 - db_helper - INFO - Filtering by Date Range: 2023-01-01 to 2026-02-05
+2026-02-05 12:03:02,451 - db_helper - INFO - Found 24 records in date range
+2026-02-05 12:03:14,236 - db_helper - INFO - Filtering by Date Range: 2021-01-01 to 2026-02-05
+2026-02-05 12:03:14,245 - db_helper - INFO - Found 249 records in date range
+2026-02-05 12:14:55,567 - db_helper - INFO - Fetching all expenses...
+2026-02-05 12:14:55,581 - db_helper - INFO - Total expenses fetched: 249
